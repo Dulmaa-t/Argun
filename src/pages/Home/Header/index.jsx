@@ -20,19 +20,19 @@ export default function Index() {
     },
   ]
 
-  const { configs } = useConfig()
+  // const { configs } = useConfig()
 
-  useEffect(
-    () =>
-    {
-      if (configs.SITE_BANNER_IMAGE)
-      {
-        /** Header ийн арын  зургийг сольж байна */
-        document.getElementById("headerImage").style.backgroundImage = `url(${process.env.REACT_APP_SERVER_URL + configs.SITE_BANNER_IMAGE})`
-      }
-    },
-    [configs]
-  )
+  // useEffect(
+  //   () =>
+  //   {
+  //     if (configs.SITE_BANNER_IMAGE)
+  //     {
+  //       /** Header ийн арын  зургийг сольж байна */
+  //       document.getElementById("headerImage").style.backgroundImage = `url(${process.env.REACT_APP_SERVER_URL + configs.SITE_BANNER_IMAGE})`
+  //     }
+  //   },
+  //   [configs]
+  // )
 
   return (
     <div class="navbar-area">
@@ -41,8 +41,8 @@ export default function Index() {
             <div class="techmax-responsive-menu">
                 <div class="logo">
                     <a href="#" class="logo-link">
-                        <img src="/assets/img/logo.png" class="white-logo" style={{width: "120px"}} alt="logo"/>
-                        <img src="/assets/img/logo-red.png" class="black-logo" style={{width: "120px", display: "none"}}
+                        <img src="/static/img/logo.png" class="white-logo" style={{width: "120px"}} alt="logo"/>
+                        <img src="/static/img/logo-red.png" class="black-logo" style={{width: "120px", display: "none"}}
                             alt="logo"/>
                     </a>
                 </div>
@@ -53,11 +53,11 @@ export default function Index() {
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/logo-red.png" class="black-logo" style={{width: "120px", display: none}}
+                    <img src="/static/img/logo-red.png" class="black-logo" style={{width: "120px", display: "none"}}
                         alt="logo"/>
-                    <img src="assets/img/logo.png" class="white-logo" style={{width:"120px"}} alt="logo"/>
+                    <img src="/static/img/logo.png" class="white-logo" style={{width:"120px"}} alt="logo"/>
                 </a>
-                <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent" style={{display: block}}>
+                <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent" style={{display: "block"}}>
                     <ul class="navbar-nav navbar-right">
                         <li class="nav-item">
                             <a href="index.html" class="page-scroll nav-link">Home</a>

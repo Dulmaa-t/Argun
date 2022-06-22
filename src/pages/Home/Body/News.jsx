@@ -1,7 +1,7 @@
 import React from 'react'
-import News from '../../../components/main/news'
+import NewsCard from '../../../components/main/news'
 
-export default function news() {
+export default function News() {
     const articles = [
         {
             "source": {
@@ -43,10 +43,10 @@ export default function news() {
                 <h2 className="title-decoration-lines-left-red" style={{marginBottom:"40px"}}>News</h2>
                 <div className="row">
                     {
-                        News.map(
+                        articles.map(
                             (element, index) => {
                                 return (
-                                    <News key={index} image={element.image} title={element.title} text={element.text} href={element.href} />
+                                    <NewsCard key={index} image={element.image} title={element.title} text={element.text} href={element.href} />
                                 )
                             }
                         )

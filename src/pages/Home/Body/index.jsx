@@ -3,12 +3,25 @@ import Team from './Team'
 import Cards from './Cards'
 import Project from './Project'
 import News from './News'
+import Footer from '../Footer'
 
 export default function Index() {
 
   return (
     <div className="page-title-area" id="redslider">
-
+      <div class="d-table">
+        <div class="d-table-cell">
+        <div class="container">
+          <div class="page-title-content text-left">
+            <h2 class="text-uppercase wow fadeInUp" style={{ visibility: "visible", animationName: "fadeInUp" }}>Building the worldwide</h2>
+            <h2 class="text-uppercase wow fadeInUp" style={{ visibility: "visible", animationName: "fadeInUp" }}><b>VIRTUAL INFRASTRUCTURE</b></h2>
+            <ul class="wow fadeInUp" style={{ visibility: "visible", animationName: "fadeInUp" }}>
+              <li><a href="https://argun.mn/ourprojects"><span>Learn More<span></span></span></a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
       <section className="services-section pt-50 pb-20" id="aboutus">
         <div className="container">
           <div className="row">
@@ -38,7 +51,7 @@ export default function Index() {
                   <a className="textImg" href="#">
                     <div id="particles-js"><canvas className="particles-js-canvas-el" width="720" height="720"
                       style={{width:"100%", height: "100%" }}></canvas></div><span
-                        className="counter counter-number">9</span>
+                        className="counter counter-number" style={{textAlign:"center"}}>9</span>
                   </a>
                 </div>
                 <div className="col-md-6">
@@ -349,7 +362,7 @@ export default function Index() {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="hire-content wow fadeInUp">
+              <div className="hire-content wow fadeInUp" style={{ visibility: "visible", animationName: "fadeInUp" }}>
                 <h2 className="title-decoration-lines-left-red">Our History</h2>
                 <ul className="timeline">
                   <li data-year="2014" data-text="Developed by AR"></li>
@@ -366,6 +379,7 @@ export default function Index() {
       </section>
       <Team />
       <News />
+      <Footer />
     </div>
 
   )
