@@ -1,19 +1,13 @@
-require("dotenv").config({ path: './backend/config/.env' });
+const email = "info@armongolia.mn"
+const password = "zadezjuowtghnqri"
+
+require("dotenv").config({ path: '.env' });
 const express = require('express')
 const cors = require("cors")
-const cookieParser = require('cookie-parser');
-
-const db = require('./backend/db');
-
-const morganCustom = require("./backend/middleware/morganCustom")
-const errorHandler = require("./backend/middleware/errorHandler")
-const successFn = require("./backend/middleware/successFn");
-
-//  бааз холбож байгаа нь
-db.dbConntect()
+const nodemailer = require("nodemailer")
 
 const app = express();
-const port = process.env.PORT
+const port = 9000
 
 var whitelist = [
     process.env.CLIENT_URL,
@@ -34,23 +28,41 @@ var corsOptions = {
 
 //  middlewares
 app.use(cors(corsOptions))
+
+//  middlewares
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser())
-app.use(morganCustom)
-app.use(successFn)
 
-//  routes
-app.use("/api/news", require("./backend/routes/news"))
-app.use("/api/author", require("./backend/routes/author"))
-app.use("/api/video", require("./backend/routes/videos"))
-app.use("/api/podcast", require("./backend/routes/podcast"))
-app.use("/api/category", require("./backend/routes/category"))
-app.use("/api/config", require("./backend/routes/config"))
-app.use("/api/sign", require("./backend/routes/sign"))
+app.post(
+    "/send-email/",
+    async (req, res, next) =>
+    {
 
-app.use(errorHandler)
-app.use('/public', express.static("./public/server"));
+        const body = req.body
+
+        let transporter = nodemailer.createTransport({
+            service: "gmail",
+            auth: {
+                user: email,
+                pass: password,
+            }
+        });
+
+        const mailOptions = {
+            subject: `Хүсэлт ирсэн байна ${body.name}-c`, // Subject line
+            html: `<b>EMAIL:</b> ${body.email}
+                <hr />
+                ${body.feedback}
+            `, // html body
+        }
+
+        mailOptions.from = email
+        mailOptions.to = email
+        transporter.sendMail(mailOptions)
+
+        res.send()
+    }
+)
 
 //  server
 const server = require('http').createServer(app)

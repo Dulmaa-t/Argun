@@ -11,14 +11,14 @@ export default function Index() {
     <div className="page-title-area" id="redslider">
       <div class="d-table">
         <div class="d-table-cell">
-        <div class="container">
-          <div class="page-title-content text-left">
-            <h2 class="text-uppercase wow fadeInUp" style={{ visibility: "visible", animationName: "fadeInUp" }}>Building the worldwide</h2>
-            <h2 class="text-uppercase wow fadeInUp" style={{ visibility: "visible", animationName: "fadeInUp" }}><b>VIRTUAL INFRASTRUCTURE</b></h2>
-            <ul class="wow fadeInUp" style={{ visibility: "visible", animationName: "fadeInUp" }}>
-              <li><a href="https://argun.mn/ourprojects"><span>Learn More<span></span></span></a></li>
-            </ul>
-          </div>
+          <div class="container">
+            <div class="page-title-content text-left">
+              <h2 class="text-uppercase wow fadeInUp" style={{ visibility: "visible", animationName: "fadeInUp" }}>Building the worldwide</h2>
+              <h2 class="text-uppercase wow fadeInUp" style={{ visibility: "visible", animationName: "fadeInUp" }}><b>VIRTUAL INFRASTRUCTURE</b></h2>
+              <ul class="wow fadeInUp" style={{ visibility: "visible", animationName: "fadeInUp" }}>
+                <li><a href="https://argun.mn/ourprojects"><span>Learn More<span></span></span></a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -41,42 +41,39 @@ export default function Index() {
         </div>
       </section>
       <Cards />
-      <section className="services-section pt-50 pb-20">
-        <div className="container">
-          <h2 className="title-decoration-lines-left-red">Numbers</h2>
-          <div className="row">
-            <div className="col-md-6 ">
-              <div className="row">
-                <div className="col-md-6 col-sm-12 text-center">
-                  <a className="textImg" href="#">
-                    <div id="particles-js"><canvas className="particles-js-canvas-el" width="720" height="720"
-                      style={{width:"100%", height: "100%" }}></canvas></div><span
-                        className="counter counter-number" style={{textAlign:"center"}}>9</span>
+      <section class="services-section pt-50 pb-20">
+        <div class="container">
+          <h2 class="title-decoration-lines-left-red">Numbers</h2>
+          <div class="row">
+            <div class="col-md-6 ">
+              <div class="row">
+                <div class="col-md-6 col-sm-12 text-center">
+                  <a class="text-img" href="#">
+                    <div id="particles-js">
+                      <canvas class="particles-js-canvas-el" ></canvas>
+                      </div>
+                      <span class="counter counter-number" style={{ textAlign: "center" }}>9</span>
                   </a>
                 </div>
-                <div className="col-md-6">
-                  <div className="year-exp mt-4 wow fadeInUp">
-                    <h3 className="text-uppercase">Years of experience</h3>
-                    <p className="text-gray-500"></p>
-                    <p className="text-justify"><span style={{color: "#3f3f3f"}}><span
-                      id="redactor-inline-breakpoint"></span>We have created&nbsp;</span></p>
-                    <p><span style={{color: "#3f3f3f"}}>the best AR&nbsp;ecosystem&nbsp;</span></p>
-                    <p></p>
+                <div class="col-md-6">
+                  <div class="year-exp mt-4 wow fadeInUp" style={{ visibility: "visible", animationName: "fadeInUp" }}>
+                    <h3 class="text-uppercase">Years of experience</h3>
+                    <p class="text-gray-500"></p><p class="text-justify"><span style={{color:"#3f3f3f"}}><span id="redactor-inline-breakpoint"></span>We have created&nbsp;</span></p>
+                    <p><span style={{ color: "#3f3f3f" }}>the best AR&nbsp;ecosystem&nbsp;</span></p><p></p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-sm-12">
-              <div className="number-lists">
-                <h2 data-text="Application"><span className="counter-number">92</span></h2>
-                <h2 data-text="Products"><span className="counter-number">30</span></h2>
-                <h2 data-text="AR experience"><span className="counter-number">1200</span><span>+</span></h2>
-                <h2 data-text="Employees"><span className="counter-number">47</span></h2>
+            <div class="col-md-6 col-sm-12">
+              <div class="number-lists">
+                <h2 data-text="Application"><span class="counter-number">92</span></h2>
+                <h2 data-text="Products"><span class="counter-number">30</span></h2>
+                <h2 data-text="AR experience"><span class="counter-number">1200</span><span>+</span></h2>
+                <h2 data-text="Employees"><span class="counter-number">47</span></h2>
               </div>
             </div>
           </div>
         </div>
-
       </section>
       <section className="services-section pt-50 pb-20" id="aboutus">
         <div className="container">
@@ -140,32 +137,32 @@ export default function Index() {
                   </li>
                 </ul>
                 <svg className="ecosystem-progress" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 -38 179.52 180" style={{marginTop: "-120px", marginBottom:"-200px"}}>
+                  viewBox="0 -38 179.52 180" style={{ marginTop: "-120px", marginBottom: "-200px" }}>
                   <title>eco system</title>
                   <circle id="circle1" cx="89.76" cy="37.47" r="38" fill="#bdbfc1"
                     data-svg-origin="89.76000213623047 37.470001220703125"
                     transform="matrix(1.1598,0,0,1.15976,-14.34365,-5.98621)"
-                    style={{transformOrigin: "0px 0px", opacity: "0.4201"}}></circle>
+                    style={{ transformOrigin: "0px 0px", opacity: "0.4201" }}></circle>
                   <circle id="circle2" cx="89.76" cy="37.47" r="38" fill="#bdbfc1"
                     data-svg-origin="89.76000213623047 37.470001220703125"
                     transform="matrix(0.6721,0,0,0.672093,29.4323,12.28668)"
-                    style={{transformOrigin:"0px 0px",opacity: "0.664"}}></circle>
+                    style={{ transformOrigin: "0px 0px", opacity: "0.664" }}></circle>
                   <circle id="circle3" cx="89.76" cy="37.47" r="38" fill="#bdbfc1"
                     data-svg-origin="89.76000213623047 37.470001220703125"
                     transform="matrix(0.0733,0,0,0.073315,83.18059,34.72289)"
-                    style={{transformOrigin: "0px 0px", opacity: "0.9633"}}></circle>
+                    style={{ transformOrigin: "0px 0px", opacity: "0.9633" }}></circle>
                   <circle id="circle4" cx="89.76" cy="37.47" r="38" fill="#bdbfc1"
                     data-svg-origin="89.76000213623047 37.470001220703125"
                     transform="matrix(1.9561,0,0,1.956093,-85.81954,-35.82481)"
-                    style={{transformOrigin: "0px 0px", opacity:" 0.022"}}></circle>
+                    style={{ transformOrigin: "0px 0px", opacity: " 0.022" }}></circle>
                   <circle id="circle5" cx="89.76" cy="37.47" r="38" fill="#bdbfc1"
                     data-svg-origin="89.76000213623047 37.470001220703125"
                     transform="matrix(1.8018,0,0,1.80176,-71.96957,-30.04195)"
-                    style={{transformOrigin: "0px 0px", opacity: "0.0991"}}></circle>
+                    style={{ transformOrigin: "0px 0px", opacity: "0.0991" }}></circle>
                   <circle id="circle6" cx="89.76" cy="37.47" r="38" fill="#bdbfc1"
                     data-svg-origin="89.76000213623047 37.470001220703125"
                     transform="matrix(1.5363,0,0,1.536316,-48.13829,-20.09576)"
-                    style={{transformOrigin: "0px 0px", opacity: "0.2318"}}></circle>
+                    style={{ transformOrigin: "0px 0px", opacity: "0.2318" }}></circle>
                   <circle className="circle" cx="89.76" cy="37.47" r="27.88"></circle>
                   <circle className="circle" cx="89.76" cy="37.47" r="27.88"></circle>
                   <polyline className="path2" points="178.81 25.22 157.14 25.22 155.41 23.48 121.93 23.48">
@@ -352,7 +349,7 @@ export default function Index() {
             </div>
             <div className="col-md-6">
               <div className="wow fadeInRight zoom text-center" >
-                <img src="/static/images/chart.png" className="imgFluid wow rotateIn"/>
+                <img src="/static/images/chart.png" className="imgFluid wow rotateIn" />
               </div>
             </div>
           </div>
