@@ -21,7 +21,7 @@ export default function Index() {
         },
         {
             title: "Contact",
-            href: "/contact/"
+            href: "/contact/" 
         },
     ]
 
