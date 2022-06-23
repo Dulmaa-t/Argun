@@ -9,11 +9,11 @@ export default function Index() {
         },
         {
             title: "About us",
-            href: "#aboutus"
+            href: "/#aboutus/"
         },
         {
             title: "Our projects ",
-            href: "#ourprojects"
+            href: "/#ourprojects/"
         },
         {
             title: "News",
@@ -26,46 +26,41 @@ export default function Index() {
     ]
 
     return (
-        <div class="navbar-area">
-            <div class="techmax-responsive-nav">
-                <div class="container">
-                    <div class="techmax-responsive-menu">
-                        <div class="logo">
-                            <a href="#" class="logo-link">
-                                <img src="/static/img/logo.png" class="white-logo" style={{ width: "120px" }} alt="logo" />
-                                <img src="/static/img/logo-red.png" class="black-logo" style={{ width: "120px", display: "none" }}
+        <div className="navbar-area">
+            <div className="techmax-responsive-nav">
+                <div className="container">
+                    <div className="techmax-responsive-menu">
+                        <div className="logo">
+                            <a href="#" className="logo-link">
+                                <img src="/static/img/logo.png" className="white-logo" style={{ width: "120px" }} alt="logo" />
+                                <img src="/static/img/logo-red.png" className="black-logo" style={{ width: "120px", display: "none" }}
                                     alt="logo" />
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="techmax-nav">
-                <div class="container">
-                    <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="/static/img/logo-red.png" class="black-logo" style={{ width: "120px", display: "none" }}
+            <div className="techmax-nav">
+                <div className="container">
+                    <nav className="navbar navbar-expand-md navbar-light">
+                        <a className="navbar-brand" href="index.html">
+                            <img src="/static/img/logo-red.png" className="black-logo" style={{ width: "120px", display: "none" }}
                                 alt="logo" />
-                            <img src="/static/img/logo.png" class="white-logo" style={{ width: "120px" }} alt="logo" />
+                            <img src="/static/img/logo.png" className="white-logo" style={{ width: "120px" }} alt="logo" />
                         </a>
-                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent" style={{ display: "block" }}>
-                            <ul class="navbar-nav navbar-right">
+                        <div className="collapse navbar-collapse mean-menu" id="navbarSupportedContent" style={{ display: "block" }}>
+                            <ul className="navbar-nav navbar-right">
                                 {
                                     headerMenu.map(
                                         (element, index) => {
                                             return <li key={index}>
-                                                <NavLink
-                                                    to={element.href}
-                                                // onMouseOver={() => handleClick(element.title)}
-                                                >
+                                                <NavLink to={element.href}>
                                                     {element.title}
                                                 </NavLink>
                                             </li>
                                         }
                                     )
                                 }
-
-
                             </ul>
                         </div>
                     </nav>
@@ -74,3 +69,19 @@ export default function Index() {
         </div>
     )
 }
+ /**  <li class="nav-item">
+        <a href="/" class="page-scroll nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#aboutus" class="page-scroll nav-link">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a href="#ourprojects" class="page-scroll nav-link">Our Projects</a>
+      </li>
+      <li class="nav-item">
+        <a href="/newsroom" class="page-scroll nav-link">Newsroom</a>
+      </li>
+      <li class="nav-item">
+        <a href="/contact" class="page-scroll nav-link">Contact</a>
+      </li> 
+ */
