@@ -7047,3 +7047,7 @@ section-padding {
 @media (min-width:1025px) {}
 
 @media (min-width:1281px) {}
+
+.txt-black {
+	color: #555 !important;
+}

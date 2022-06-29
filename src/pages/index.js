@@ -1,15 +1,16 @@
 import React from 'react'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Home from './Home'
-import Footer from './Home/Footer';
 
 export default function index() {
-  console.log('dsadas');
   return (
     <>
-        <main className="main-root">
-            <Home></Home>
-        </main>
+      <ToastContainer />
+      <main className="main-root">
+        <Home></Home>
+      </main>
     </>
   )
 }

@@ -1,7 +1,8 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 
-export default function Index() {
+export default function Index({ navLinkColor="" }) {
+
     const headerMenu = [
         {
             title: "Home",
@@ -21,7 +22,7 @@ export default function Index() {
         },
         {
             title: "Contact",
-            href: "/contact/" 
+            href: "/contact/"
         },
     ]
 
@@ -50,17 +51,22 @@ export default function Index() {
                         </a>
                         <div className="collapse navbar-collapse mean-menu" id="navbarSupportedContent" style={{ display: "block" }}>
                             <ul className="navbar-nav navbar-right">
-                                {
-                                    headerMenu.map(
-                                        (element, index) => {
-                                            return <li key={index}>
-                                                <NavLink to={element.href}>
-                                                    {element.title}
-                                                </NavLink>
-                                            </li>
-                                        }
-                                    )
-                                }
+                                <li class="nav-item">
+                                    <a href="/" class={`page-scroll nav-link ${navLinkColor}`}>Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#aboutus" class={`page-scroll nav-link ${navLinkColor}`}>About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#ourprojects" class={`page-scroll nav-link ${navLinkColor}`}>Our Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <NavLink to="/news/" className={`page-scroll nav-link ${navLinkColor}`}>Newsroom</NavLink>
+                                </li>
+                                <li class="nav-item">
+                                    <NavLink to="/contact/" className={`page-scroll nav-link ${navLinkColor}`}>Contact</NavLink>
+                                </li>
+
                             </ul>
                         </div>
                     </nav>
@@ -69,19 +75,30 @@ export default function Index() {
         </div>
     )
 }
- /**  <li class="nav-item">
-        <a href="/" class="page-scroll nav-link">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="#aboutus" class="page-scroll nav-link">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a href="#ourprojects" class="page-scroll nav-link">Our Projects</a>
-      </li>
-      <li class="nav-item">
-        <a href="/newsroom" class="page-scroll nav-link">Newsroom</a>
-      </li>
-      <li class="nav-item">
-        <a href="/contact" class="page-scroll nav-link">Contact</a>
-      </li> 
- */
+ /**  {
+                                  headerMenu.map(
+                                      (element, index) => {
+                                          return <li key={index}>
+                                              <NavLink to={element.href}>
+                                                  {element.title}
+                                              </NavLink>
+                                          </li>
+                                      }
+                                  )
+                              }
+*  <li class="nav-item">
+      <a href="/" class="page-scroll nav-link">Home</a>
+    </li>
+    <li class="nav-item">
+      <a href="#aboutus" class="page-scroll nav-link">About Us</a>
+    </li>
+    <li class="nav-item">
+      <a href="#ourprojects" class="page-scroll nav-link">Our Projects</a>
+    </li>
+    <li class="nav-item">
+      <a href="/newsroom" class="page-scroll nav-link">Newsroom</a>
+    </li>
+    <li class="nav-item">
+      <a href="/contact" class="page-scroll nav-link">Contact</a>
+    </li> 
+*/

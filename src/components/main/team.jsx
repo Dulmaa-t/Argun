@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Team(props) {
     return (
-        <div className="owl-item cloned" style={{width: "214.333px", marginRight: "20px"}}>
+        <div className="owl-item cloned" style={{ width: "214.333px", marginRight: "20px" }}>
             <div className="single-testimonial">
                 <div className="single-team-box">
                     <div className="team-image">

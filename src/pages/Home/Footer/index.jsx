@@ -35,7 +35,7 @@ export default function Footer() {
                                         </a>
                                     </li>
                                 </ul>
-                                <p style={{marginTop:"40px !important"}}><strong>Argun Introduction</strong></p>
+                                <p style={{ marginTop: "40px !important" }}><strong>Argun Introduction</strong></p>
 
                                 <div class="banner-btn">
                                     <a href="https://argun.mn/files/ARGUN-Introduction-web.pdf" target="_blank"
@@ -43,7 +43,7 @@ export default function Footer() {
                                         <i class="fa fa-download"></i> Download
                                     </a>
                                 </div>
-        
+
                             </div>
                         </div>
 
@@ -55,7 +55,7 @@ export default function Footer() {
                                 <p>902, A block, Union Building, Sun Road, Unesco street, 1st khoroo, Sukhbaatar district,
                                     Ulaanbaatar Mongolia.</p>
                                 <p>
-                                    <strong>Email: </strong>contact@argun.mn<br/><strong>Phone: </strong>+976 - 7733 4477
+                                    <strong>Email: </strong>contact@argun.mn<br /><strong>Phone: </strong>+976 - 7733 4477
                                 </p>
                             </div>
                         </div>
@@ -79,7 +79,7 @@ export default function Footer() {
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <p class="text-white text-right" style={{marginTop:"40px !important"}}>© 2022 Argun group</p>
+                            <p class="text-white text-right" style={{ marginTop: "40px !important" }}>© 2022 Argun group</p>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
-const email = "info@armongolia.mn"
-const password = "zadezjuowtghnqri"
+const email = "armongolia42@gmail.com"
+const password = "zizplewqccmgdoak"
 
 require("dotenv").config({ path: '.env' });
 const express = require('express')
@@ -37,7 +37,6 @@ app.post(
     "/send-email/",
     async (req, res, next) =>
     {
-
         const body = req.body
 
         let transporter = nodemailer.createTransport({
@@ -49,8 +48,9 @@ app.post(
         });
 
         const mailOptions = {
-            subject: `Хүсэлт ирсэн байна ${body.name}-c`, // Subject line
+            subject: `Хүсэлт ирсэн байна ${body.name}-c: ${body.subject}`, // Subject line
             html: `<b>EMAIL:</b> ${body.email}
+                    <b>PHONE:</b> ${body.phone}
                 <hr />
                 ${body.feedback}
             `, // html body
@@ -60,7 +60,7 @@ app.post(
         mailOptions.to = email
         transporter.sendMail(mailOptions)
 
-        res.send()
+        res.send({})
     }
 )
 

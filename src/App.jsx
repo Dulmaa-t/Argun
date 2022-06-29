@@ -1,9 +1,13 @@
+import { BrowserRouter } from 'react-router-dom';
 import Pages from './pages'
+
 
 
 function App() {
   return (
-    <Pages />
+    <BrowserRouter>
+      <Pages />
+    </BrowserRouter>
   );
 }
 
