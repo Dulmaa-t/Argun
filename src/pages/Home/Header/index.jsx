@@ -33,8 +33,8 @@ export default function Index({ navLinkColor="" }) {
                     <div className="techmax-responsive-menu">
                         <div className="logo">
                             <a href="#" className="logo-link">
-                                <img src="/static/img/logo.png" className="white-logo" style={{ width: "120px" }} alt="logo" />
-                                <img src="/static/img/logo-red.png" className="black-logo" style={{ width: "120px", display: "none" }}
+                                <img src="/static/img/logo.png" className="white-logo" style={{ width: "120px", display: "none" }} alt="logo" />
+                                <img src="/static/img/logo-red.png" className="black-logo" style={{ width: "120px" }}
                                     alt="logo" />
                             </a>
                         </div>
@@ -45,9 +45,9 @@ export default function Index({ navLinkColor="" }) {
                 <div className="container">
                     <nav className="navbar navbar-expand-md navbar-light">
                         <a className="navbar-brand" href="index.html">
-                            <img src="/static/img/logo-red.png" className="black-logo" style={{ width: "120px", display: "none" }}
+                            <img src="/static/img/logo-red.png" className="black-logo" style={{ width: "120px" }}
                                 alt="logo" />
-                            <img src="/static/img/logo.png" className="white-logo" style={{ width: "120px" }} alt="logo" />
+                            <img src="/static/img/logo.png" className="white-logo" style={{ width: "120px", display: "none" }} alt="logo" />
                         </a>
                         <div className="collapse navbar-collapse mean-menu" id="navbarSupportedContent" style={{ display: "block" }}>
                             <ul className="navbar-nav navbar-right">

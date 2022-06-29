@@ -143,31 +143,29 @@ function hexToRgb(e){var a=/^#?([a-f\d])([a-f\d])([a-f\d])$/i;e=e.replace(a,func
 			}
 		});
 		
-		console.log($("#redslider").length);
-		
 		if($("#redslider").length > 0){
 		    $(".black-logo").hide();
-		    $(".red-logo").show();
+		    $(".white-logo").show();
 		}else{
 		    $(".black-logo").show();
-		    $(".red-logo").hide();
+		    $(".white-logo").hide();
 		}
 	
         // Header Sticky
 		$(window).on('scroll',function() {
-            if ($(this).scrollTop() > 120){  
+            if ($(this).scrollTop() > 120){
                 $('.navbar-area').addClass("is-sticky");
-                
+
                 if($("#redslider").length > 0){
                     $(".black-logo").show();
-		            $(".red-logo").hide();
+		            $(".white-logo").hide();
                 }
             }
             else{
                 $('.navbar-area').removeClass("is-sticky");
                 if($("#redslider").length > 0){
                     $(".black-logo").hide();
-		            $(".red-logo").show();
+		            $(".white-logo").show();
                 }
             }
         });
